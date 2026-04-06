@@ -54,7 +54,7 @@ Token waxaa waaye: markee LLM-yadu qiyaasta sameynayaan, qoraalka waxee u jajibi
 
 Hadaa rabtid inaad aragtid ChatGPT tokenization suu u sameeyo, ka fiiri:
 
-- https://platform.openai.com/tokenizer
+- <a href="https://platform.openai.com/tokenizer" style="color: #00ccff; text-decoration: none;">https://platform.openai.com/tokenizer</a>
 
 Halkaas waxaad ku arkeysaa qoraal kasta in tokens loo kala jabinayo.
 
