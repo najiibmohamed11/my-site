@@ -5,11 +5,10 @@ pubDate: "Feb 16 2026"
 heroImage: "../../assets/deployment.png"
 ---
 
-𝗪𝗮𝗹𝗶 𝗺𝗮 𝗶𝘀 𝘄𝗲𝘆𝗱𝗶𝗶𝘀𝗮𝘆 𝘄𝗵𝘆 𝗩𝗲𝗿𝗰𝗲𝗹 𝗮𝗺𝗮 𝗡𝗲𝘁𝗹𝗶𝗳𝘆 𝗲𝗲 𝘂 𝗹𝗲𝗲𝘆𝗶𝗵𝗶𝗶𝗻 𝗳𝗿𝗲𝗲 𝘁𝗶𝗲𝗿, 𝗹𝗸𝗻 𝗰𝗼𝗺𝗽𝗮𝗻𝘆 𝘆𝗮𝗮𝘀𝗵𝗮 𝘃𝗽𝘀 𝗯𝗶𝘅𝗶𝘆𝗼 (𝗔𝗪𝗦, 𝗗𝗶𝗴𝗶𝘁𝗮𝗹𝗢𝗰𝗲𝗮𝗻) 𝗲𝗲𝘆𝘀𝗮𝗻 𝘂 𝗹𝗮𝗵𝗲𝘆𝗻 𝗳𝗿𝗲𝗲 𝘁𝗶𝗲𝗿?
-
-Saa u faham sheekadaan, waxyar gadaal aa u noqono.
 
 ![Deployment](../../assets/deployment.png)
+
+Saa u faham sheekadaan, waxyar gadaal aa u noqono.
 
 2010, hadaad rabtid inaad application sameysid, waxee eheed straight forward.
 Waxaa badanaa la isticmaali jiray LAMP stack (L = Linux, A = Apache, M = MySQL, P = PHP). Markaa deployment-iga easy uu ahaay VPS (Virtual Private Server) baa kireysaneysaa, then server-kaaga aa daranee, kadib code-kaaga dhax dhigee.
