@@ -83,35 +83,6 @@ const projects = (await getCollection('projects')).sort(
 				color: #888;
 			}
 
-
-			.type-tag {
-				font-size: 0.6rem;
-				color: #444;
-				font-family: 'JetBrains Mono', 'Fira Code', monospace;
-				text-transform: uppercase;
-				letter-spacing: 0.1em;
-				border: 1px solid #222;
-				padding: 1px 5px;
-				border-radius: 4px;
-				display: inline-block;
-				margin-left: 1rem;
-				min-width: 60px;
-				text-align: center;
-				transition: all 0.3s ease;
-				opacity: 0.6;
-			}
-
-			li:hover .type-tag.blog {
-				color: #00ccff;
-				border-color: #00ccff22;
-				background: #00ccff05;
-			}
-			li:hover .type-tag.project {
-				color: #ff3e00;
-				border-color: #ff3e0022;
-				background: #ff3e0005;
-			}
-
 			.image-preview {
 				position: fixed;
 				pointer-events: none;
@@ -183,7 +154,7 @@ const projects = (await getCollection('projects')).sort(
 		<Header />
 		<main>
 			<section class="content-section">
-				<span class="section-label">Work</span>
+				<span class="section-label">Projects</span>
 				<ul>
 					{
 						projects.map((item) => (
@@ -204,7 +175,6 @@ const projects = (await getCollection('projects')).sort(
 									<span class="date">
 										<FormattedDate date={item.data.pubDate} />
 									</span>
-									<span class="type-tag project">project</span>
 								</div>
 							</li>
 						))
@@ -213,7 +183,7 @@ const projects = (await getCollection('projects')).sort(
 			</section>
 
 			<section class="content-section">
-				<span class="section-label">Writing</span>
+				<span class="section-label">Blog</span>
 				<ul>
 					{
 						blogPosts.map((item) => (
@@ -231,7 +201,6 @@ const projects = (await getCollection('projects')).sort(
 									<span class="date">
 										<FormattedDate date={item.data.pubDate} />
 									</span>
-									<span class="type-tag blog">blog</span>
 								</div>
 							</li>
 						))

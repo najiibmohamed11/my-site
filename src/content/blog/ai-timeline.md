@@ -7,7 +7,7 @@ heroImage: "../../assets/ai-history.png"
 
 ![AI History](../../assets/ai-history.png)
 
-𝗛𝗮𝗱𝗮𝗮 𝗸𝘂 𝘄𝗮𝗿𝗲𝗲𝗿𝘁𝗮𝘆 𝗔𝗜 𝗶𝘆𝗼 𝗵𝘆𝗽𝗲-𝗸𝗮 𝘀𝗼𝗰𝗱𝗼, 𝗵𝗮𝗹 𝗺𝗮𝗿 𝗮𝗮 𝗴𝗮𝗱𝗮𝗮𝗹 𝗸𝗮 𝘀𝗼𝗼 𝗯𝗶𝗹𝗮𝗮𝗯𝗻𝗼.
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abdinajibmohamed12/video/7609347245212814613" data-video-id="7609347245212814613" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@abdinajibmohamed12" href="https://www.tiktok.com/@abdinajibmohamed12?refer=embed">@abdinajibmohamed12</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
 ## 2022 – 𝗔𝗵𝗮 𝗠𝗼𝗺𝗲𝗻𝘁
 
@@ -38,10 +38,3 @@ Qof walbo oo AI ka shakisanay inuu code qori karin, I mean quality code, 2025 wu
 - Gemini CLI
 
 Sanadkaan sanad waali ayuu ahaay, gaar ahaan programming iyo agentic coding-ka.
-
-## 𝗩𝗶𝗱𝗲𝗼 𝗦𝗵𝗮𝗿𝗮𝘅 𝗮𝗵
-
-Hadaa rabtid inaad muuqaal ahaan u araktid sharaxaadan, ka daawo halkan:
-
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abdinajibmohamed12/video/7609347245212814613" data-video-id="7609347245212814613" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@abdinajibmohamed12" href="https://www.tiktok.com/@abdinajibmohamed12?refer=embed">@abdinajibmohamed12</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-
