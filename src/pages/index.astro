@@ -190,11 +190,6 @@ const projects = (await getCollection('projects')).sort(
 							<li>
 								<a href={`/blog/${item.id}/`} class="title-link">
 									<span class="title">{item.data.title}</span>
-									{item.data.heroImage && (
-										<div class="image-preview">
-											<img src={item.data.heroImage.src} alt={item.data.title} />
-										</div>
-									)}
 								</a>
 
 								<div class="meta">
