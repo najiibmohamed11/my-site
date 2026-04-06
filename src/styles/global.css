@@ -21,11 +21,16 @@ body {
 }
 
 main {
+	width: 100%;
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 4rem 2rem;
 	flex: 1;
+	box-sizing: border-box;
 }
+
+
+
 
 h1,
 h2,

@@ -1,7 +1,7 @@
 ---
 title: "𝗛𝗮𝗱𝗮𝗮 𝗿𝗮𝗯𝘁𝗶𝗱 𝗶𝗻𝗮𝗮 𝗸𝗮 𝗳𝗶𝗶𝗰𝗻𝗮𝗮𝘁𝗶𝗱 𝗮𝘃𝗲𝗿𝗮𝗴𝗲 𝗔𝗜 𝘂𝘀𝗲𝗿 𝗮𝗺𝗮 𝗾𝗼𝗳 𝗰𝗮𝗮𝗱𝗶 𝗲𝗵 𝗼𝗼 𝗖𝗵𝗮𝘁𝗚𝗣𝗧 𝗰𝗮𝗮𝗱𝗶 𝘄𝗮𝘅 𝘂 𝘄𝗲𝗲𝘆𝗱𝗶𝗶𝘆𝗼, 𝗾𝗼𝗿𝗮𝗮𝗹𝗸𝗮𝗮𝗻 𝗮𝗾𝗿𝗶𝘀𝗼."
 description: "Qoraalkan waxaan ku sharaxayaa si fudud waxa ay yihiin LLMs (sida ChatGPT), sida ay u qiyaasaan ereyada xiga, waxa tokens yihiin, iyo waxa loola jeedo context window."
-pubDate: "Apr 6 2026"
+pubDate: "Mar 15 2026"
 heroImage: "../../assets/llm-explainer.png"
 ---
 
@@ -58,12 +58,12 @@ Hadaa rabtid inaad aragtid ChatGPT tokenization suu u sameeyo, ka fiiri:
 
 Halkaas waxaad ku arkeysaa qoraal kasta in tokens loo kala jabinayo.
 
-## 𝗖𝗼𝗻𝘁𝗲𝘅𝘁 𝘄𝗶𝗻𝗱𝗼𝘄
+---
 
-LLMs waxaa jiro meel ay ku egtahay **xasuustooda (context window)**.
+## 𝗩𝗶𝗱𝗲𝗼 𝗦𝗵𝗮𝗿𝗮𝘅 𝗮𝗵
 
-Tusaale: ChatGPT aa la sheekeesaneyso cabaar, hal window aa kuu furnaay, waxaad is leedahay: "wixii hore oo dhan wuu xasuustaa." 
+Hadaa rabtid inaad muuqaal ahaan u araktid sharaxaadan, ka daawo halkan:
 
-Laakiin waxaa jiro xad uu ku egyahay xasuusta modelka. Tusaale, GPT-5 hadaa leeyahay 1-million tokens context, ka badan ma xasuusnaan karo hal mar. Haduu qoraalkaagu ka bato, kuwii ugu horreeyay ayaa ka harhaya xasuusta.
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abdinajibmohamed12/video/7621963670188330260" data-video-id="7621963670188330260" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@abdinajibmohamed12" href="https://www.tiktok.com/@abdinajibmohamed12?refer=embed">@abdinajibmohamed12</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
-So mar walbo aa mowduuc cusub kala hadli rabtid, tab ama window cusub furo. Waxaad kaloo ogaatid in ChatGPT **uusan run ahaantii "xusuus joogto ah" lahayn**, ee uu kaliya eegayo tokens-ka hadda la siiyay (plus wixii aan xadkiisa ka bixin).
+

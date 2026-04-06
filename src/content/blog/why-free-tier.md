@@ -21,3 +21,4 @@ Dhinaca kale, serverless waxaa waaye instead aa heysan laheed VPS oo 24 hours ku
 Vercel mar walbo aa wax ku deploy gareesid, waxee sameenayaan code-kaaga ee S3 bucket ku ridayaan. Server daran ma jiro. Markii uu qof soo booqdo aa server aa loo spin gareenaa. Markaas waxaa fudud hadaad 1,000,000 user ee ku soo booqdaan adoo ogeen automaticly scaling aa heestaa, user error arkaayo ma jiro.
 
 Vercel iyo Netlify waxee isticmaalaan AWS Lambda, physical servers ma heestaan. Dadka badanaa markee Vercel maqlaan, niyada developer experience aa ku soo dhacdo, lkn sheekada wee ka weentahay in deployment-iga la fududeeyo. Of course, serverless mostly dadka waxee dhahaan muhiimada ugu ween waxaa waaye in aadan server-kaaga ka walwalin waa sax, lkn server aa naqaane camal ma ahan.
+

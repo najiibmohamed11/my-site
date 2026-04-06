@@ -6,9 +6,13 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('blog')).sort(
+const blogPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const projects = (await getCollection('projects')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
 ---
 
 <!doctype html>
@@ -16,67 +20,238 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			.section-label {
+				font-size: 0.65rem;
+				color: #444;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				margin-bottom: 1rem;
+				display: block;
+				padding-bottom: 0.75rem;
+				border-bottom: 1px solid #1a1a1a;
+			}
+
+
+			.content-section {
+				margin-bottom: 6rem;
+			}
+
+
 			ul {
 				list-style: none;
 				padding: 0;
 			}
+
 			li {
 				display: flex;
 				justify-content: space-between;
 				align-items: baseline;
-				margin-bottom: 1.5rem;
+				margin-bottom: 1rem;
+				padding: 0.5rem 0;
 				transition: all 0.2s ease;
+				position: relative;
+				border-bottom: 1px solid transparent;
 			}
+			
 			.title {
-				font-size: 1.1rem;
-				color: #999; /* Gray default */
-				transition: color 0.2s ease;
+				transition: all 0.3s ease;
+				font-weight: 500;
 			}
-			li:hover .title {
-				color: #fff; /* White on hover */
-			}
-			a {
+
+			a.title-link {
 				border-bottom: none;
 				display: block;
-				flex-grow: 1; /* Make link clickable across space if desired, or just huge text area */
+				flex-grow: 1;
+				position: relative;
+			}
+
+			a.title-link:hover .title {
+				color: #fff;
+				padding-left: 5px;
+			}
+
+			.project-desc {
+				font-size: 0.85rem;
+				color: #666;
+				margin-top: 0.2rem;
+				font-weight: 400;
+				display: block;
+				transition: color 0.3s ease;
+			}
+
+			a.title-link:hover .project-desc {
+				color: #888;
+			}
+
+
+			.type-tag {
+				font-size: 0.6rem;
+				color: #444;
+				font-family: 'JetBrains Mono', 'Fira Code', monospace;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				border: 1px solid #222;
+				padding: 1px 5px;
+				border-radius: 4px;
+				display: inline-block;
+				margin-left: 1rem;
+				min-width: 60px;
+				text-align: center;
+				transition: all 0.3s ease;
+				opacity: 0.6;
+			}
+
+			li:hover .type-tag.blog {
+				color: #00ccff;
+				border-color: #00ccff22;
+				background: #00ccff05;
+			}
+			li:hover .type-tag.project {
+				color: #ff3e00;
+				border-color: #ff3e0022;
+				background: #ff3e0005;
+			}
+
+			.image-preview {
+				position: fixed;
+				pointer-events: none;
+				max-width: 400px;
+				max-height: 250px;
+				background: #000;
+				border-radius: 6px;
+				overflow: hidden;
+				visibility: hidden;
+				z-index: 1000;
+				box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+				border: 1px solid #333;
+				opacity: 0;
+				transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+				transform: scale(0.8);
+			}
+			.image-preview img {
+				display: block;
+				width: 100%;
+				height: auto;
+				max-height: 250px;
+				object-fit: contain;
+			}
+
+
+			a.title-link:hover .image-preview {
+				visibility: visible;
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			.meta {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				min-width: 200px;
+				justify-content: flex-end;
 			}
 			.date {
-				color: #555; /* Darker gray for date */
+				color: #555;
 				font-size: 0.9rem;
-				min-width: 120px;
 				text-align: right;
 				font-variant-numeric: tabular-nums;
 			}
+
 			@media (max-width: 600px) {
+				.image-preview {
+					display: none !important;
+				}
 				li {
 					flex-direction: column;
-					gap: 0.2rem;
+					gap: 0.5rem;
 					margin-bottom: 2rem;
+				}
+				.meta {
+					justify-content: flex-start;
+					width: 100%;
+					flex-direction: row-reverse;
 				}
 				.date {
 					text-align: left;
 				}
 			}
+
+
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<ul>
-				{
-					posts.map((post) => (
-						<li>
-							<a href={`/blog/${post.id}/`}>
-								<span class="title">{post.data.title}</span>
-							</a>
-							<span class="date">
-								<FormattedDate date={post.data.pubDate} />
-							</span>
-						</li>
-					))
-				}
-			</ul>
+			<section class="content-section">
+				<span class="section-label">Work</span>
+				<ul>
+					{
+						projects.map((item) => (
+							<li>
+								<a href={item.data.link || item.data.repo || '#'} target="_blank" class="title-link">
+									<span class="title">{item.data.title}</span>
+									{item.data.description && (
+										<span class="project-desc">{item.data.description}</span>
+									)}
+									{item.data.heroImage && (
+										<div class="image-preview">
+											<img src={item.data.heroImage.src} alt={item.data.title} />
+										</div>
+									)}
+								</a>
+
+								<div class="meta">
+									<span class="date">
+										<FormattedDate date={item.data.pubDate} />
+									</span>
+									<span class="type-tag project">project</span>
+								</div>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+
+			<section class="content-section">
+				<span class="section-label">Writing</span>
+				<ul>
+					{
+						blogPosts.map((item) => (
+							<li>
+								<a href={`/blog/${item.id}/`} class="title-link">
+									<span class="title">{item.data.title}</span>
+									{item.data.heroImage && (
+										<div class="image-preview">
+											<img src={item.data.heroImage.src} alt={item.data.title} />
+										</div>
+									)}
+								</a>
+
+								<div class="meta">
+									<span class="date">
+										<FormattedDate date={item.data.pubDate} />
+									</span>
+									<span class="type-tag blog">blog</span>
+								</div>
+							</li>
+						))
+					}
+				</ul>
+			</section>
 		</main>
 		<Footer />
+
+		<script>
+			const links = document.querySelectorAll('.title-link');
+			links.forEach(link => {
+				const preview = link.querySelector('.image-preview') as HTMLElement;
+				if (!preview) return;
+				
+				link.addEventListener('mousemove', (e: any) => {
+					preview.style.left = (e.clientX + 15) + 'px';
+					preview.style.top = (e.clientY + 15) + 'px';
+				});
+			});
+		</script>
 	</body>
 </html>
