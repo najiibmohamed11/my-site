@@ -3,7 +3,11 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Abd.
+	<a href="https://www.tiktok.com/@abdinajibmohamed12" target="_blank" rel="noopener noreferrer">TikTok</a>
+	<span class="separator">•</span>
+	<a href="https://www.facebook.com/najib.mohamed.hasan/" target="_blank" rel="noopener noreferrer">Facebook</a>
+	<span class="separator">•</span>
+	<a href="https://www.linkedin.com/in/abdinajib-mohmaed-hassan-5764241b8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 </footer>
 
 <style>
@@ -16,5 +20,25 @@ const today = new Date();
 		text-align: center;
 		max-width: 900px;
 		margin: 4rem auto 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	footer a {
+		color: #777;
+		text-decoration: none;
+		border-bottom: none;
+		transition: color 0.2s ease;
+	}
+
+	footer a:hover {
+		color: #fff;
+	}
+
+	.separator {
+		color: #333;
 	}
 </style>
