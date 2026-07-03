@@ -1,5 +1,5 @@
 ---
-title: "𝗛𝗮𝗱𝗮𝗮 𝗸𝘂 𝘄𝗮𝗿𝗲𝗲𝗿𝘁𝗮𝘆 𝗔𝗜 𝗶𝘆𝗼 𝗵𝘆𝗽𝗲-𝗸𝗮 𝘀𝗼𝗰𝗱𝗼, 𝗵𝗮𝗹 𝗺𝗮𝗿 𝗮𝗮 𝗴𝗮𝗱𝗮𝗮𝗹 𝗸𝗮 𝘀𝗼𝗼 𝗯𝗶𝗹𝗮𝗮𝗯𝗻𝗼."
+title: "AI recap 2025"
 description: "AI timeline from 2022 to 2025: From ChatGPT's 'Aha Moment' to the Year of Vibe Coding."
 pubDate: "Feb 18 2026"
 heroImage: "../../assets/ai-history.png"
